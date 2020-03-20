@@ -1,4 +1,4 @@
-package com.test.query;
+package com.test.common;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
 import org.springframework.stereotype.Component;

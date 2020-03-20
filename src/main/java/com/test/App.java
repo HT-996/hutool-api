@@ -1,15 +1,12 @@
 package com.test;
 
-import com.coxautodev.graphql.tools.SchemaParser;
-import graphql.schema.GraphQLSchema;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.context.annotation.Bean;
 
-/** 启动类
+/**
+ * 启动类
+ *
  * @Author HuTing
  * @Date 2020-03-18 15:54
  */

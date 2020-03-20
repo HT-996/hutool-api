@@ -1,4 +1,4 @@
-package com.test.mutation;
+package com.test.common;
 
 import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import org.springframework.stereotype.Component;
