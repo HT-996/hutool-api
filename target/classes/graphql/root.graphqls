@@ -1,0 +1,13 @@
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    hello:String
+    omg: String
+}
+
+type Mutation {
+    hello:String
+}

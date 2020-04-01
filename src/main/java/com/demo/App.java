@@ -1,4 +1,4 @@
-package com.test;
+package com.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -25,7 +25,7 @@ public class App {
 //                .query(GraphQLObjectType.newObject()
 //                        .name("query")
 //                        .field(field -> field
-//                                .name("test")
+//                                .name("demo")
 //                                .type(Scalars.GraphQLString)
 //                                .dataFetcher(environment -> "response")
 //                        )

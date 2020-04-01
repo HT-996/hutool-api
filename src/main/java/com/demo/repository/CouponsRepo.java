@@ -1,6 +1,6 @@
-package com.test.repository;
+package com.demo.repository;
 
-import com.test.model.Coupons;
+import com.demo.model.Coupons;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

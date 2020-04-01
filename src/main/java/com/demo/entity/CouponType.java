@@ -1,4 +1,4 @@
-package com.test.entity;
+package com.demo.entity;
 
 /**
  * 优惠券

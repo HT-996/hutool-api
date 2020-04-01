@@ -1,6 +1,6 @@
-package com.test.model;
+package com.demo.model;
 
-import com.test.entity.CouponType;
+import com.demo.entity.CouponType;
 import lombok.Data;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;

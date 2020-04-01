@@ -1,8 +1,8 @@
-package com.test.query.coupons;
+package com.demo.query.coupons;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import com.test.model.Coupons;
-import com.test.repository.CouponsRepo;
+import com.demo.model.Coupons;
+import com.demo.repository.CouponsRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
