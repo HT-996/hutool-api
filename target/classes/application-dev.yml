@@ -59,7 +59,6 @@ spring:
 #tools:
 #  schemaLocationPattern: "**/*.graphqls"
 
-# 屏蔽某个包下面输出的日志
-#logging:
-#  level:
-#    com.demo.controller: 'off'
+logging:
+  level:
+    com.demo.controller: 'off'
