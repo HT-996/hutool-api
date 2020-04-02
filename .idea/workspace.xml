@@ -4,11 +4,27 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41d66bf1-b94e-4a21-9308-2dde948f9f1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/DbDataHeleper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/test/TestDbData.java" afterDir="false" />
+    <list default="true" id="41d66bf1-b94e-4a21-9308-2dde948f9f1c" name="Default Changelist" comment="集成testNG，利用httpclient去调用graphql接口">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demo/test/TestGraphql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/ExceptionUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HttpUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/common/Mutation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/common/Query.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/DbDataHeleper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/entity/CouponType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/model/Coupons.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/query/coupons/CouponsQuery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/repository/CouponsRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test/TempTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/test/TestDbData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graphql/coupons.graphqls" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/graphql/root.graphqls" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/model/Coupons.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-264">
-              <caret line="32" column="24" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="24" />
+            <state relative-caret-position="363">
+              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,17 +54,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/DbDataHeleper.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TestGraphql.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="284">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#712#733#0" expanded="true" />
-                <element signature="e#2667#2683#0" expanded="true" />
-                <element signature="e#3439#3460#0" expanded="true" />
-                <element signature="e#3671#3687#0" expanded="true" />
+                <element signature="e#2832#2833#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,26 +69,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test-output/Default Suite/temp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="315">
+              <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/sql/Statement.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/query/coupons/CouponTypeResolver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="64" column="26" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/sql/ResultSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2312">
-              <caret line="147" column="17" selection-start-line="147" selection-start-column="17" selection-end-line="147" selection-end-column="17" />
+            <state relative-caret-position="240">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#340#341#0" expanded="true" />
+                <element signature="e#391#392#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TestDbData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -94,19 +102,23 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/DbDataHeleper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="119" column="20" selection-start-line="119" selection-start-column="20" selection-end-line="119" selection-end-column="20" />
+            <state relative-caret-position="57">
+              <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#712#733#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/query/coupons/CouponsQuery.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TempTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="360">
+              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,22 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/repository/CouponsRepo.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/entity/CouponType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -141,15 +141,13 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="GraphQL File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>springframework</find>
-      <find>starter-web</find>
       <find>starter-test</find>
       <find>spring-boot-test</find>
       <find>spring-boot-devtools-2.0.5</find>
@@ -169,7 +167,21 @@
       <find>com.graphql-java-kickstart</find>
       <find>mysql</find>
       <find>executeQuery</find>
+      <find>HttpClient</find>
+      <find>HttpHost</find>
+      <find>Request</find>
+      <find>EntityUtils</find>
+      <find>URIUtils</find>
+      <find>HttpUtil</find>
+      <find>HttpResponse</find>
+      <find>response</find>
+      <find>URI</find>
+      <find>dbDataMethod</find>
+      <find>requestParams</find>
     </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -194,7 +206,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/entity/CouponType.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/model/Coupons.java" />
         <option value="$PROJECT_DIR$/src/main/resources/graphql/coupons.graphql" />
-        <option value="$PROJECT_DIR$/src/main/resources/graphql/coupons.graphqls" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/repository/CouponsRepo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/query/coupons/CouponsQuery.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/TempTest.java" />
@@ -206,8 +217,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/demo/common/Mutation.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/test/TestDbData.java" />
-        <option value="$PROJECT_DIR$/test-output/Default Suite/temp.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/demo/config/DbDataHeleper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/test/TestGraphql1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/utils/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/ExceptionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/HttpUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/query/coupons/CouponTypeResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/graphql/coupons.graphqls" />
+        <option value="$PROJECT_DIR$/src/main/java/com/demo/test/TestGraphql.java" />
+        <option value="$PROJECT_DIR$/test-output/Default Suite/temp.html" />
       </list>
     </option>
   </component>
@@ -240,7 +258,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="25" />
+    <option name="x" value="-4" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="1004" />
   </component>
@@ -290,6 +309,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="temp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="coupons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="temp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -306,17 +343,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="graphql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="temp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="temp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="temp" type="b2602c69:ProjectViewProjectNode" />
@@ -345,7 +371,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/graphql" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/demo/test" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -354,21 +380,23 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources/graphql" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.demo.test" />
-      <recent name="com.demo.config" />
-      <recent name="com.test.entity" />
-      <recent name="" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/test" />
       <recent name="$PROJECT_DIR$/src/main/resources/graphql" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.demo.utils" />
+      <recent name="com.demo.test" />
+      <recent name="com.demo.config" />
+      <recent name="com.test.entity" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/demo/test" />
+      <recent name="$PROJECT_DIR$/src/main/resources/graphql" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -383,7 +411,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestDbData.testmethod1">
+  <component name="RunManager" selected="TestNG.TestGraphql.testcase1">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.demo.App" />
       <module name="temp" />
@@ -391,27 +419,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TempTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="temp" />
-      <option name="PACKAGE_NAME" value="com.demo.test" />
-      <option name="MAIN_CLASS_NAME" value="com.demo.test.TempTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TempTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="temp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.demo.test" />
-      <option name="MAIN_CLASS_NAME" value="com.demo.test.TempTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo.App" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -460,20 +470,65 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestGraphql" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="temp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demo.test" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.test.TestGraphql" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGraphql.testcase1" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="temp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="com.demo.test" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.test.TestGraphql" />
+      <option name="METHOD_NAME" value="testcase1" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="true" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.App" />
-      <item itemvalue="JUnit.TempTest" />
-      <item itemvalue="JUnit.TempTest.test" />
+      <item itemvalue="Spring Boot.App" />
       <item itemvalue="TestNG.TestDbData" />
       <item itemvalue="TestNG.TestDbData.testmethod1" />
+      <item itemvalue="TestNG.TestGraphql.testcase1" />
+      <item itemvalue="TestNG.TestGraphql" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestGraphql.testcase1" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="TestNG.TestGraphql" />
         <item itemvalue="TestNG.TestDbData.testmethod1" />
         <item itemvalue="TestNG.TestDbData" />
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.TempTest.test" />
-        <item itemvalue="JUnit.TempTest" />
       </list>
     </recent_temporary>
   </component>
@@ -494,42 +549,55 @@
       <workItem from="1584929744850" duration="4292000" />
       <workItem from="1585647070870" duration="5684000" />
     </task>
+    <task id="LOCAL-00001" summary="graphql扩展字段">
+      <created>1585806365427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585806365427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TempTest - 2020.03.18 at 15h 51m 36s.xml">
-      <configuration name="TempTest" configurationId="JUnit" />
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 11h 48m 58s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TempTest - 2020.03.23 at 10h 10m 25s.xml">
-      <configuration name="TempTest" configurationId="JUnit" />
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 11h 50m 55s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TempTest_test - 2020.03.23 at 10h 24m 12s.xml">
-      <configuration name="TempTest.test" configurationId="JUnit" />
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 11h 51m 48s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TempTest_test - 2020.03.23 at 10h 33m 36s.xml">
-      <configuration name="TempTest.test" configurationId="JUnit" />
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 11h 52m 43s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDbData_testmethod1 - 2020.04.01 at 17h 19m 29s.xml">
-      <configuration name="TestDbData.testmethod1" configurationId="TestNG" />
+    <history-entry file="TestGraphql - 2020.04.02 at 11h 55m 26s.xml">
+      <configuration name="TestGraphql" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDbData_testmethod1 - 2020.04.01 at 17h 31m 46s.xml">
-      <configuration name="TestDbData.testmethod1" configurationId="TestNG" />
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 11h 56m 28s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDbData_testmethod1 - 2020.04.01 at 17h 36m 35s.xml">
-      <configuration name="TestDbData.testmethod1" configurationId="TestNG" />
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 11h 58m 38s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestDbData_testmethod1 - 2020.04.01 at 17h 37m 05s.xml">
-      <configuration name="TestDbData.testmethod1" configurationId="TestNG" />
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 11h 59m 26s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 12h 02m 05s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TestGraphql_testcase1 - 2020.04.02 at 13h 40m 27s.xml">
+      <configuration name="TestGraphql.testcase1" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60928000" />
+    <option name="totallyTimeSpent" value="66424000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1004" extended-state="0" />
-    <editor active="true" />
+    <frame x="-4" y="23" width="1920" height="1004" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1682641" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14696486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -539,24 +607,24 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.93077743" visible="true" weight="0.39254385" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8232162" weight="0.4890351" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.93077743" visible="true" weight="0.5350877" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.8232162" weight="0.2741228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="GraphQL" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.34868422" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4506579" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.17678382" side_tool="true" weight="0.8519737" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49893504" weight="0.32894737" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" weight="0.49122807" />
+      <window_info anchor="bottom" id="Version Control" order="15" weight="0.4725877" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.29552716" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.1773163" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -567,6 +635,37 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="graphql扩展字段" />
+    <MESSAGE value="集成testNG，利用httpclient去调用graphql接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="集成testNG，利用httpclient去调用graphql接口" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/controller/HelloController.java">
@@ -626,13 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/entity/CouponType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/graphql/root.graphqls">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -650,23 +742,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TempTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/graphql/coupons.graphqls">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/query/coupons/CouponsQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -681,30 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="55" selection-start-line="9" selection-start-column="55" selection-end-line="9" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/model/Coupons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-264">
-          <caret line="32" column="24" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -732,33 +783,196 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TestDbData.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/draw/CompositeImagesServiceTestNew.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="224">
+          <caret line="165" column="15" lean-forward="true" selection-start-line="165" selection-start-column="15" selection-end-line="165" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test-output/Default Suite/temp.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TestGraphql1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="495">
+          <caret line="33" column="48" lean-forward="true" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/utils/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/org/apache/commons/httpclient/util/ExceptionUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/deploy.jar!/com/sun/deploy/net/HttpResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/fastjson/1.2.56/fastjson-1.2.56.jar!/com/alibaba/fastjson/JSON.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="439" column="25" selection-start-line="439" selection-start-column="25" selection-end-line="439" selection-end-column="25" />
+          <folding>
+            <element signature="e#17228#17229#0" expanded="true" />
+            <element signature="e#17285#17286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/ExceptionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/HttpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4297#4312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TempTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TestDbData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/config/DbDataHeleper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="57">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#712#733#0" expanded="true" />
-            <element signature="e#2667#2683#0" expanded="true" />
-            <element signature="e#3439#3460#0" expanded="true" />
-            <element signature="e#3671#3687#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Default Suite/temp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-output/Default Suite/temp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/test/TestGraphql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#2832#2833#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/query/coupons/CouponTypeResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#340#341#0" expanded="true" />
+            <element signature="e#391#392#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/entity/CouponType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/graphql/coupons.graphqls">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/graphql/coupons.graphqls">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/com/demo/config/DbDataHeleper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#3907#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/demo/model/Coupons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
