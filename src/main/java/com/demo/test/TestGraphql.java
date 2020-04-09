@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.testng.AbstractTestNGSpringContextTests;
 import org.testng.annotations.Test;
@@ -36,6 +37,9 @@ public class TestGraphql extends AbstractTestNGSpringContextTests {
 
     @Autowired
     private CouponsRepo couponsRepo;
+    @Autowired
+    private RedisTemplate redisTemplate;
+
 
     @Test
     public void testcase1() {
@@ -45,6 +49,10 @@ public class TestGraphql extends AbstractTestNGSpringContextTests {
         String thirdPartyIFPayApiUrl = "http://127.0.0.1:6001";
         try {
             logger.info("开始测试--->>>");
+
+            //redis调用
+            System.err.println("redis Data: " + redisTemplate.hasKey("name"));
+//            RedisClient client = RedisClient.create(redisURI);
 
 
             list = getDate();
