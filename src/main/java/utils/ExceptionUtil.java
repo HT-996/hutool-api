@@ -4,6 +4,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 /**
+ * 异常处理工具类
+ *
  * @Author HuTing
  * @Date 2020-04-02 11:33
  */

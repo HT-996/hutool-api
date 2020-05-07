@@ -30,6 +30,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * http请求工具类
+ *
  * @Author HuTing
  * @Date 2020-04-02 11:34
  */
