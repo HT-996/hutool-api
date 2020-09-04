@@ -4,11 +4,15 @@ import com.demo.core.redis.AquiredLockWorker;
 import com.demo.core.redis.DistributedLockHandler;
 import com.demo.core.redis.DistributedLocker;
 import com.demo.core.redis.Lock;
+import com.demo.model.Members;
+import com.demo.repository.MembersRepo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 /**
  * @Author HuTing
@@ -23,6 +27,8 @@ public class HelloController {
     private DistributedLockHandler distributedLockHandler;
     @Autowired
     private DistributedLocker distributedLocker;
+    @Autowired
+    private MembersRepo membersRepo;
 
     @RequestMapping(value = "hello")
     public String hello() {
@@ -77,5 +83,10 @@ public class HelloController {
 
         });
         return "hello redlock!";
+    }
+
+    @RequestMapping("/findMembers")
+    public List<Members> findMembers() {
+        return membersRepo.findAll();
     }
 }

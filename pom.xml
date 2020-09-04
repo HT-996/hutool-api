@@ -82,7 +82,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <!--            <version>8.0.16</version>-->
+            <version>6.0.5</version>
         </dependency>
 
         <dependency>
@@ -176,6 +176,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
@@ -190,6 +191,33 @@
                     </archive>
                 </configuration>
             </plugin>
+
+            <plugin>
+            <groupId>org.mybatis.maven</groupId>
+            <artifactId>migrations-maven-plugin</artifactId>
+            <version>1.1.2</version>
+            <configuration>
+                <repository>${basedir}/migration</repository>
+<!--                <environment>${env}</environment>-->
+            </configuration>
+            <executions>
+                <execution>
+                    <id>migration-package</id>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>pending</goal>
+                    </goals>
+                </execution>
+            </executions>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>${mysql.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
         </plugins>
     </build>
 
