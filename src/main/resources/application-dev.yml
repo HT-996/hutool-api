@@ -8,10 +8,10 @@ server:
 # spring相关配置
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/cool?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useOldAliasMetadataBehavior=true
+    url: jdbc:mysql://localhost:3306/cool?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useOldAliasMetadataBehavior=true&useSSL=false&requireSSL=false
     driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    password: ht123456
+    username: cool
+    password: 123456
     type: com.zaxxer.hikari.HikariDataSource
   #      hikari:
   #        connection-test-query: SELECT 1
