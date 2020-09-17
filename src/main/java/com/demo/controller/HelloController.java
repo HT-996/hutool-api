@@ -89,4 +89,9 @@ public class HelloController {
     public List<Members> findMembers() {
         return membersRepo.findAll();
     }
+
+    @RequestMapping("/testDeploy")
+    public String testDeploy() {
+        return "测试部署脚本!!!";
+    }
 }
